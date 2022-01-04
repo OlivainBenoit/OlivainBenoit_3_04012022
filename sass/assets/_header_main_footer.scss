@@ -1,7 +1,15 @@
+h1 {
+  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+}
+
+* {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
 .logo {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  padding-top: 20px;
   margin-bottom: 10px;
   & img {
     width: 50%;
@@ -27,7 +35,7 @@
   }
 }
 
-main {
+.main {
   background: $color-lightgray;
   margin-bottom: 50px;
   & h2 {
@@ -57,4 +65,22 @@ footer {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(312deg)
       brightness(101%) contrast(106%);
   }
+}
+
+.header {
+  display: flex;
+  .arrow {
+    padding: 25px 0 0 25px;
+  }
+}
+
+.img_topside {
+  height: 300px;
+  & img {
+    width: 100%;
+  }
+}
+
+body {
+  margin: 0;
 }
