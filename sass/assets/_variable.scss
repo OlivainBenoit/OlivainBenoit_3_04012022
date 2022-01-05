@@ -22,9 +22,10 @@ $color-darkgray: #353535;
 @keyframes fadein {
   from {
     opacity: 0;
-    z-index: -100;
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }

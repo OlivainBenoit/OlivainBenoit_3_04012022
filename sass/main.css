@@ -1,20 +1,26 @@
 @-webkit-keyframes fadein {
   from {
     opacity: 0;
-    z-index: -100;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
   to {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 @keyframes fadein {
   from {
     opacity: 0;
-    z-index: -100;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
   }
   to {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -357,6 +363,7 @@ button:hover i {
 .icon_heart .heart_full {
   display: none;
   color: white;
+  opacity: 0;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 2s;
@@ -371,6 +378,7 @@ button:hover i {
 
 .icon_heart:hover .heart_full {
   display: block;
+  opacity: 1;
   color: #9356dc;
 }
 
