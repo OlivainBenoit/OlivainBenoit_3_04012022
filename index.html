@@ -8,7 +8,7 @@
   <script src="https://kit.fontawesome.com/d8454b4167.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="sass/main.css">
   <title>Ohmyfood</title>
@@ -34,12 +34,12 @@
   <div class="nav_bar">
     <h2>Fonctionnement</h2>
     <nav>
-      <button class="btn btn_nav"><i class="fas fa-mobile-alt btn_nav_icon"></i>Choisissez un restaurant</button>
-      <button class="btn btn_nav"><i class="fas fa-list-ul btn_nav_icon"></i>Composez votre menu</button>
-      <button class="btn btn_nav"><i class="fas fa-store btn_nav_icon"></i>Dégustez au restaurant</button>
+      <span class="number">1</span><button class="btn btn_nav" type="submit"><i class="fas fa-mobile-alt btn_nav_icon"></i>Choisissez un restaurant</button>
+      <span class="number">2</span><button class="btn btn_nav" type="submit"><i class="fas fa-list-ul btn_nav_icon"></i>Composez votre menu</button>
+      <span class="number">3</span><button class="btn btn_nav" type=""><i class="fas fa-store btn_nav_icon"></i>Dégustez au restaurant</button>
     </nav>
   </div>
-  <main class="main" class="restaurants">
+  <main class="main" id="restaurants">
     <h2>Restaurants</h2>
     <div class="card">
       <a href="Pages_html/Page_la_palette_du_gout.html">
@@ -50,7 +50,7 @@
         <p>Ménilmontant</p>
         </div>
         <div class="icon_heart">
-        <i class="far fa-heart heart"></i>
+        <i class="far fa-heart heart"></i><i class="fas fa-heart heart_full"></i>
         </div>
       </div>
       </a>
@@ -64,7 +64,7 @@
         <p>Charonne</p>
         </div>
         <div class="icon_heart">
-        <i class="far fa-heart heart"></i>
+        <i class="far fa-heart heart"></i><i class="fas fa-heart heart_full"></i>
         </div>
       </div>
       </a>
@@ -78,7 +78,7 @@
         <p>Cité rouge</p>
         </div>
         <div class="icon_heart">
-        <i class="far fa-heart heart"></i>
+        <i class="far fa-heart heart"></i><i class="fas fa-heart heart_full"></i>
         </div>
       </div>
       </a>
@@ -92,7 +92,7 @@
         <p>Folie méricourt</p>
         </div>
         <div class="icon_heart">
-        <i class="far fa-heart heart"></i>
+        <i class="far fa-heart heart"></i><i class="fas fa-heart heart_full"></i>
         </div>
       </div>
       </a>

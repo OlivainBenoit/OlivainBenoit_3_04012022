@@ -11,12 +11,12 @@
     background: $color-lightgray;
     color: black;
     margin-bottom: 30px;
-    width: 90%;
+    width: 80%;
     height: 70px;
     border-radius: 1em;
     & i {
-      margin-right: 30px;
-      margin-left: -40px;
+      position: absolute;
+      left: 18%;
     }
   }
   &_alt {
@@ -25,5 +25,21 @@
     justify-content: center;
     align-items: center;
     width: 50%;
+  }
+}
+
+button {
+  font-size: 25px;
+  font-weight: bold;
+  @include box-shadow;
+  cursor: pointer;
+  & i {
+    color: $color-darkgray;
+  }
+  &:hover {
+    background-color: lighten($color: $color-primary, $amount: 35%);
+    & i {
+      color: $color-primary;
+    }
   }
 }

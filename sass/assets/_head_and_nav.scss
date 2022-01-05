@@ -2,12 +2,12 @@
   width: 100%;
   font-size: 18px;
   background-color: $color-lightgray;
-  padding-bottom: 50px;
+  padding: 20px 0 50px 0;
   & h1 {
     width: 80%;
-    font-size: 25px;
     margin: auto;
     margin-top: 30px;
+    @include title;
   }
   &_bloc {
     display: flex;
@@ -24,4 +24,27 @@
 nav {
   display: flex;
   flex-direction: column;
+  .number {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    left: 8%;
+    top: 45px;
+    background-color: $color-primary;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: white;
+    font-weight: normal;
+  }
+}
+
+h2 {
+  margin: 50px 0 30px 30px;
+  @include title;
+}
+
+p {
+  @include text_size;
 }

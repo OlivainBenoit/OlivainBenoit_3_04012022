@@ -4,7 +4,9 @@
   margin: auto;
   background: white;
   height: 250px;
+  padding-bottom: 20px;
   margin-bottom: 20px;
+  @include box-shadow;
   & img {
     object-fit: cover;
     width: 100%;
@@ -23,6 +25,7 @@
       & h3 {
         margin-top: 5px;
         margin-bottom: 5px;
+        font-size: 25px;
       }
       & p {
         margin-top: 5px;
@@ -33,9 +36,25 @@
 }
 
 .icon_heart {
-  margin-right: 20px;
+  margin-right: 30px;
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 25px;
+  .heart_full {
+    display: none;
+    color: white;
+    transition-property: color;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+  }
+  &:hover {
+    .heart {
+      display: none;
+    }
+    .heart_full {
+      display: block;
+      color: $color-primary;
+    }
+  }
 }
 
 .menu {
@@ -67,12 +86,13 @@
   }
   &_card {
     background-color: white;
-    box-shadow: 2px 0px 10px $color-mediumgray;
+    @include box-shadow;
     display: flex;
     justify-content: space-between;
     border-radius: 15px;
     margin: 10px auto;
     padding: 0 10px;
+    animation: fadein 2s;
     &_price {
       margin-top: 20px;
       font-weight: bold;
@@ -84,5 +104,9 @@
   }
   & p {
     margin: 5px;
+    font-size: 18px;
+  }
+  .icon_heart {
+    margin-top: 30px;
   }
 }

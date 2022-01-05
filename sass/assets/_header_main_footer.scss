@@ -1,4 +1,4 @@
-h1 {
+.menu h1 {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
 }
 
@@ -47,11 +47,18 @@ h1 {
 .position {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   background-color: $color-mediumgray;
-  box-shadow: inset 0px 3px 5px gray;
+  box-shadow: inset 0px 2px 5px gray;
+  height: 60px;
+  color: $color-darkgray;
   & i {
     margin-right: 10px;
+  }
+  & p {
+    font-size: 20px;
+    font-weight: bold;
   }
 }
 
@@ -74,6 +81,7 @@ ul {
   }
   & li {
     margin-bottom: 10px;
+    cursor: pointer;
   }
 }
 
