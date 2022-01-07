@@ -321,6 +321,10 @@ p {
   background: linear-gradient(#ff79da, #9356dc);
 }
 
+.btn:hover {
+  background-color: #c9abee;
+}
+
 .btn_nav {
   background: #f6f6f6;
   color: black;
@@ -356,10 +360,6 @@ p {
       -ms-flex-align: center;
           align-items: center;
   width: 50%;
-}
-
-.btn_main:hover {
-  background-color: #c9abee;
 }
 
 .card {
@@ -412,8 +412,7 @@ p {
 }
 
 .icon_heart {
-  margin-right: 30px;
-  margin-top: 20px;
+  margin: 20px 30px 0 30px;
   font-size: 25px;
 }
 
@@ -483,11 +482,6 @@ p {
   padding-left: 10px;
   -webkit-animation: fadein 2s;
           animation: fadein 2s;
-}
-
-.menu_card_name {
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .menu_card_price {
