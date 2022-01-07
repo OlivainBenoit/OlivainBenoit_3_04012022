@@ -200,7 +200,11 @@ ul i {
 
 ul li {
   margin-bottom: 10px;
-  cursor: pointer;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
 }
 
 footer {
@@ -221,7 +225,10 @@ footer img {
 }
 
 .img_topside img {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
+  height: 120%;
 }
 
 .head {
