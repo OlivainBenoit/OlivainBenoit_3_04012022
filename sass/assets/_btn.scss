@@ -3,10 +3,13 @@
   margin: auto;
   height: 50px;
   border-radius: 2em;
-  background: linear-gradient($color-secondary, $color-primary);
   color: white;
   border-style: none;
   font-size: 18px;
+  font-weight: bold;
+  @include box-shadow;
+  cursor: pointer;
+  background: linear-gradient($color-secondary, $color-primary);
   &_nav {
     background: $color-lightgray;
     color: black;
@@ -17,6 +20,13 @@
     & i {
       position: absolute;
       left: 18%;
+      color: $color-darkgray;
+    }
+    &:hover {
+      background-color: lighten($color: $color-primary, $amount: 34%);
+      & i {
+        color: $color-primary;
+      }
     }
   }
   &_alt {
@@ -26,20 +36,9 @@
     align-items: center;
     width: 50%;
   }
-}
-
-button {
-  font-size: 25px;
-  font-weight: bold;
-  @include box-shadow;
-  cursor: pointer;
-  & i {
-    color: $color-darkgray;
-  }
-  &:hover {
-    background-color: lighten($color: $color-primary, $amount: 35%);
-    & i {
-      color: $color-primary;
+  &_main {
+    &:hover {
+      background-color: lighten($color: $color-primary, $amount: 20%);
     }
   }
 }

@@ -42,10 +42,6 @@
   .heart_full {
     display: none;
     color: white;
-    opacity: 0;
-    transition-property: color;
-    transition-duration: 2s;
-    transition-timing-function: linear;
   }
   &:hover {
     .heart {
@@ -53,8 +49,8 @@
     }
     .heart_full {
       display: block;
-      opacity: 1;
       color: $color-primary;
+      animation: heart 3s;
     }
   }
 }
@@ -63,8 +59,6 @@
   border-radius: 30px 30px 0 0;
   background-color: $color-lightgray;
   position: relative;
-  top: -50px;
-  bottom: 0;
   padding: 0 20px 50px 20px;
   & h1 {
     padding-top: 20px;
@@ -93,11 +87,41 @@
     justify-content: space-between;
     border-radius: 15px;
     margin: 10px auto;
-    padding: 0 10px;
+    padding-left: 10px;
     animation: fadein 2s;
+    &_name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
     &_price {
-      margin-top: 20px;
-      font-weight: bold;
+      display: flex;
+      border-radius: 0 15px 15px 0;
+      & p {
+        position: relative;
+        top: 20px;
+        padding-right: 10px;
+        font-weight: bold;
+      }
+      &_check {
+        display: none;
+      }
+      &:hover {
+        & .menu_card_price_check {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 0 15px 15px 0;
+          font-size: 25px;
+          width: 50px;
+          background: $color-tertiary;
+          color: white;
+          animation: fadeside 2s;
+          cursor: pointer;
+        }
+        & i {
+          animation: rotate 2s;
+        }
+      }
     }
   }
   & h5 {
@@ -106,7 +130,7 @@
   }
   & p {
     margin: 5px;
-    font-size: 18px;
+    font-size: 15px;
   }
   .icon_heart {
     margin-top: 30px;

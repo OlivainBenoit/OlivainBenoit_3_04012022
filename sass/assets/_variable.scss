@@ -29,3 +29,32 @@ $color-darkgray: #353535;
     transform: translateY(0);
   }
 }
+
+@keyframes fadeside {
+  from {
+    transform: scaleZ(0);
+    width: 0;
+  }
+  to {
+    transform: scaleZ(1);
+    width: 50px;
+  }
+}
+
+@keyframes heart {
+  from {
+    color: white;
+  }
+  to {
+    color: $color-primary;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
