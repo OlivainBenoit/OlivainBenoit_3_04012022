@@ -24,13 +24,15 @@
 nav {
   display: flex;
   flex-direction: column;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
   .number {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    position: relative;
-    left: 8%;
-    top: 45px;
+    position: absolute;
+    left: -10px;
     background-color: $color-primary;
     width: 25px;
     height: 25px;

@@ -68,12 +68,22 @@ ul {
   list-style-type: none;
   padding-left: 20px;
   margin-bottom: 0;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    font-size: 18px;
+  }
   & i {
     margin-right: 10px;
     font-size: 10px;
+    @media screen and (min-width: 1024px) {
+      font-size: 15px;
+    }
   }
   & li {
     margin-bottom: 10px;
+    @media screen and (min-width: 1024px) {
+      margin: auto;
+    }
     & a {
       text-decoration: none;
       color: white;
@@ -85,11 +95,23 @@ footer {
   background: $color-darkgray;
   color: white;
   padding-bottom: 20px;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   & img {
     padding: 20px 0 0 20px;
     width: 150px;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(312deg)
       brightness(101%) contrast(106%);
+  }
+}
+
+.logo_footer {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: center;
   }
 }
 
