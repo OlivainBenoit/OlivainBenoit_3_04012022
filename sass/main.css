@@ -382,6 +382,11 @@ p {
   }
 }
 
+.btn:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+}
+
 .btn_nav {
   position: relative;
   background: #f6f6f6;
@@ -520,8 +525,8 @@ p {
 .icon_heart:hover .heart_full {
   display: block;
   color: #9356dc;
-  -webkit-animation: heart 3s;
-          animation: heart 3s;
+  -webkit-animation: heart 2s;
+          animation: heart 2s;
 }
 
 .menu {
@@ -572,8 +577,21 @@ p {
   border-radius: 15px;
   margin: 10px auto;
   padding-left: 10px;
+}
+
+.menu_card_entree {
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
+}
+
+.menu_card_plats {
   -webkit-animation: fadein 2s;
           animation: fadein 2s;
+}
+
+.menu_card_desserts {
+  -webkit-animation: fadein 3s;
+          animation: fadein 3s;
 }
 
 .menu_card_price {

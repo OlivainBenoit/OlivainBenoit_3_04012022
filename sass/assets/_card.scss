@@ -62,7 +62,7 @@
     .heart_full {
       display: block;
       color: $color-primary;
-      animation: heart 3s;
+      animation: heart 2s;
     }
   }
 }
@@ -100,7 +100,15 @@
     border-radius: 15px;
     margin: 10px auto;
     padding-left: 10px;
-    animation: fadein 2s;
+    &_entree {
+      animation: fadein 1s;
+    }
+    &_plats {
+      animation: fadein 2s;
+    }
+    &_desserts {
+      animation: fadein 3s;
+    }
     &_price {
       display: flex;
       border-radius: 0 15px 15px 0;

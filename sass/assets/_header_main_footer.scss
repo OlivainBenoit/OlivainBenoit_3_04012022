@@ -123,3 +123,56 @@ footer {
     height: 120%;
   }
 }
+
+.head {
+  width: 100%;
+  font-size: 18px;
+  background-color: $color-lightgray;
+  padding: 20px 0 50px 0;
+  & h1 {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    @include title;
+  }
+  &_bloc {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  & p {
+    margin-bottom: 40px;
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
+  .number {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    left: -10px;
+    background-color: $color-primary;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: white;
+    font-weight: normal;
+  }
+}
+
+h2 {
+  margin: 50px 0 30px 30px;
+  @include title;
+}
+
+p {
+  @include text_size;
+}

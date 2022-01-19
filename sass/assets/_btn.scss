@@ -13,6 +13,9 @@
   @media screen and (min-width: 1024px) {
     width: 300px;
   }
+  &:hover {
+    filter: brightness(1.1);
+  }
   &_nav {
     position: relative;
     background: $color-lightgray;
