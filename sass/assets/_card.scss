@@ -4,7 +4,12 @@
   margin: auto;
   background: white;
   height: 250px;
+  padding-bottom: 20px;
   margin-bottom: 20px;
+  @include box-shadow;
+  @media screen and (min-width: 1024px) {
+    width: 40%;
+  }
   & img {
     object-fit: cover;
     width: 100%;
@@ -23,6 +28,7 @@
       & h3 {
         margin-top: 5px;
         margin-bottom: 5px;
+        font-size: 25px;
       }
       & p {
         margin-top: 5px;
@@ -32,18 +38,39 @@
   }
 }
 
+.bloc_card {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 50px;
+  }
+}
+
 .icon_heart {
-  margin-right: 20px;
-  margin-top: 20px;
-  font-size: 20px;
+  margin: 20px 30px 0 30px;
+  font-size: 25px;
+  .heart_full {
+    display: none;
+    color: white;
+  }
+  &:hover {
+    .heart {
+      display: none;
+    }
+    .heart_full {
+      display: block;
+      color: $color-primary;
+      animation: heart 2s;
+    }
+  }
 }
 
 .menu {
   border-radius: 30px 30px 0 0;
   background-color: $color-lightgray;
   position: relative;
-  top: -50px;
-  bottom: 0;
   padding: 0 20px 50px 20px;
   & h1 {
     padding-top: 20px;
@@ -67,15 +94,59 @@
   }
   &_card {
     background-color: white;
-    box-shadow: 2px 0px 10px $color-mediumgray;
+    @include box-shadow;
     display: flex;
     justify-content: space-between;
     border-radius: 15px;
     margin: 10px auto;
-    padding: 0 10px;
+    padding-left: 10px;
+    &_name {
+      width: 100%;
+      overflow: hidden;
+      & > * {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+    &_entree {
+      animation: fadein 1s;
+    }
+    &_plats {
+      animation: fadein 2s;
+    }
+    &_desserts {
+      animation: fadein 3s;
+    }
     &_price {
-      margin-top: 20px;
-      font-weight: bold;
+      display: flex;
+      border-radius: 0 15px 15px 0;
+      & p {
+        position: relative;
+        top: 20px;
+        padding-right: 10px;
+        font-weight: bold;
+      }
+      &_check {
+        display: none;
+      }
+      &:hover {
+        & .menu_card_price_check {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 0 15px 15px 0;
+          font-size: 25px;
+          width: 50px;
+          background: $color-tertiary;
+          color: white;
+          animation: fadeside 2s;
+          cursor: pointer;
+        }
+        & i {
+          animation: rotate 2s;
+        }
+      }
     }
   }
   & h5 {
@@ -84,5 +155,25 @@
   }
   & p {
     margin: 5px;
+    font-size: 15px;
+  }
+  .icon_heart {
+    margin-top: 30px;
+  }
+}
+
+.bloc_menu {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.menu_entree,
+.menu_plats,
+.menu_desserts {
+  @media screen and (min-width: 1024px) {
+    width: 30%;
   }
 }

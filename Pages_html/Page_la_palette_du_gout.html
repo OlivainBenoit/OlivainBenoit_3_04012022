@@ -9,7 +9,7 @@
   <script src="https://kit.fontawesome.com/d8454b4167.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../sass/main.css">
   <title>La palette du gout</title>
@@ -33,12 +33,14 @@
       <div class="menu_title">
         <h1>La palette du gout</h1>
       </div>
-      <div class="menu_icon">
-        <i class="far fa-heart heart"></i>
+      <div class="icon_heart">
+        <i class="far fa-heart heart"></i><i class="fas fa-heart heart_full"></i>
       </div>
     </div>
+    <div class="bloc_menu">
     <div class="menu_entree">
       <h4>ENTRÉES</h4>
+      <div class="menu_card_entree">
       <div class="menu_card">
         <div class="menu_card_name">
           <h5>Fricassée d'escargot</h5>
@@ -46,6 +48,7 @@
         </div>
         <div class="menu_card_price">
           <p>25€</p>
+        <div class="menu_card_price_check"><i class="fas fa-check-circle"></i></div>
         </div>
       </div>
       <div class="menu_card">
@@ -55,6 +58,7 @@
         </div>
         <div class="menu_card_price">
           <p>35€</p>
+          <div class="menu_card_price_check"><i class="fas fa-check-circle"></i></div>
         </div>
       </div>
       <div class="menu_card">
@@ -64,11 +68,14 @@
         </div>
         <div class="menu_card_price">
           <p>20€</p>
+          <div class="menu_card_price_check"><i class="fas fa-check-circle"></i></div>
         </div>
       </div>
     </div>
+    </div>
     <div class="menu_plats">
       <h4>PLATS</h4>
+      <div class="menu_card_plats">
       <div class="menu_card">
         <div class="menu_card_name">
           <h5>Filet de boeuf aux herbes</h5>
@@ -76,6 +83,7 @@
         </div>
         <div class="menu_card_price">
           <p>40€</p>
+          <div class="menu_card_price_check"><i class="fas fa-check-circle"></i></div>
         </div>
       </div>
       <div class="menu_card">
@@ -85,6 +93,7 @@
         </div>
         <div class="menu_card_price">
           <p>35€</p>
+          <div class="menu_card_price_check"><i class="fas fa-check-circle"></i></div>
         </div>
       </div>
       <div class="menu_card">
@@ -94,11 +103,14 @@
         </div>
         <div class="menu_card_price">
           <p>44€</p>
+          <div class="menu_card_price_check"><i class="fas fa-check-circle"></i></div>
         </div>
       </div>
     </div>
+    </div>
     <div class="menu_desserts">
       <h4>DESSERTS</h4>
+      <div class="menu_card_desserts">
       <div class="menu_card">
         <div class="menu_card_name">
           <h5>Paris-Brest</h5>
@@ -106,6 +118,7 @@
         </div>
         <div class="menu_card_price">
           <p>18€</p>
+          <div class="menu_card_price_check"><i class="fas fa-check-circle"></i></div>
         </div>
       </div>
       <div class="menu_card">
@@ -115,6 +128,7 @@
         </div>
         <div class="menu_card_price">
           <p>22€</p>
+          <div class="menu_card_price_check"><i class="fas fa-check-circle"></i></div>
         </div>
       </div>
       <div class="menu_card">
@@ -124,10 +138,13 @@
         </div>
         <div class="menu_card_price">
           <p>23€</p>
+          <div class="menu_card_price_check"><i class="fas fa-check-circle"></i></div>
         </div>
       </div>
+      </div>
     </div>
-    <button class="btn btn_alt">Commander</button>
+    </div>
+    <button class="btn btn_alt btn_main">Commander</button>
   </div>
 </main>
 <footer>
@@ -135,9 +152,9 @@
     <img src="../Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="logo_footer">
   </div>
   <ul>
-    <li><i class="fas fa-utensils ustensils"></i>Proposer un restaurant</li>
-    <li><i class="fas fa-hands-helping hands"></i>Devenir partenaire</li>
-    <li>Mentions légales</li>
-    <li>Contact</li>
+    <li><i class="fas fa-utensils ustensils"></i><a class="footer_link" href="#">Proposer un restaurant</a></li>
+    <li><i class="fas fa-hands-helping hands"></i><a class="footer_link" href="#">Devenir partenaire</a></li>
+    <li><a class="footer_link" href="#">Mentions légales</a></li>
+    <li><a class="footer_link" href="mailto:adresse@serveur.com">Contact</a></li>
   </ul>
 </footer>
