@@ -503,13 +503,6 @@ p {
   }
 }
 
-.btn:hover {
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
-  -webkit-box-shadow: 2px 5px 10px #353535;
-          box-shadow: 2px 5px 10px #353535;
-}
-
 .btn_nav {
   position: relative;
   background: #f6f6f6;
@@ -555,10 +548,24 @@ p {
   width: 50%;
 }
 
+.btn_alt:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-box-shadow: 2px 5px 10px #353535;
+          box-shadow: 2px 5px 10px #353535;
+}
+
 @media screen and (min-width: 1024px) {
   .btn_alt {
     width: 300px;
   }
+}
+
+.btn_main:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-box-shadow: 2px 5px 10px #353535;
+          box-shadow: 2px 5px 10px #353535;
 }
 
 .card {

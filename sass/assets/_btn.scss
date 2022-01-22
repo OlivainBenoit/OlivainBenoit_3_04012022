@@ -13,10 +13,6 @@
   @media screen and (min-width: 1024px) {
     width: 300px;
   }
-  &:hover {
-    filter: brightness(1.1);
-    box-shadow: 2px 5px 10px $color-darkgray;
-  }
   &_nav {
     position: relative;
     background: $color-lightgray;
@@ -42,6 +38,10 @@
     }
   }
   &_alt {
+    &:hover {
+      filter: brightness(1.1);
+      box-shadow: 2px 5px 10px $color-darkgray;
+    }
     margin-top: 50px;
     display: flex;
     justify-content: center;
@@ -49,6 +49,12 @@
     width: 50%;
     @media screen and (min-width: 1024px) {
       width: 300px;
+    }
+  }
+  &_main {
+    &:hover {
+      filter: brightness(1.1);
+      box-shadow: 2px 5px 10px $color-darkgray;
     }
   }
 }
