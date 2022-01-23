@@ -785,7 +785,13 @@ p {
 
 .menu p {
   margin: 5px;
-  font-size: 15px;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 400px) {
+  .menu p {
+    font-size: 15px;
+  }
 }
 
 .menu .icon_heart {

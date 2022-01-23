@@ -155,7 +155,10 @@
   }
   & p {
     margin: 5px;
-    font-size: 15px;
+    font-size: 14px;
+    @media screen and (min-width: 400px) {
+      font-size: 15px;
+    }
   }
   .icon_heart {
     margin-top: 30px;
