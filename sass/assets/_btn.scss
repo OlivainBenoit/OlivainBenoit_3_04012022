@@ -10,12 +10,8 @@
   @include box-shadow;
   cursor: pointer;
   background: linear-gradient($color-secondary, $color-primary);
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     width: 300px;
-  }
-  &:hover {
-    filter: brightness(1.1);
-    box-shadow: 2px 5px 10px $color-darkgray;
   }
   &_nav {
     position: relative;
@@ -42,13 +38,23 @@
     }
   }
   &_alt {
+    &:hover {
+      filter: brightness(1.1);
+      box-shadow: 2px 5px 10px $color-darkgray;
+    }
     margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 768px) {
       width: 300px;
+    }
+  }
+  &_main {
+    &:hover {
+      filter: brightness(1.1);
+      box-shadow: 2px 5px 10px $color-darkgray;
     }
   }
 }

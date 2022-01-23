@@ -497,17 +497,10 @@ p {
   background: linear-gradient(#ff79da, #9356dc);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .btn {
     width: 300px;
   }
-}
-
-.btn:hover {
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
-  -webkit-box-shadow: 2px 5px 10px #353535;
-          box-shadow: 2px 5px 10px #353535;
 }
 
 .btn_nav {
@@ -555,10 +548,24 @@ p {
   width: 50%;
 }
 
-@media screen and (min-width: 1024px) {
+.btn_alt:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-box-shadow: 2px 5px 10px #353535;
+          box-shadow: 2px 5px 10px #353535;
+}
+
+@media screen and (min-width: 768px) {
   .btn_alt {
     width: 300px;
   }
+}
+
+.btn_main:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-box-shadow: 2px 5px 10px #353535;
+          box-shadow: 2px 5px 10px #353535;
 }
 
 .card {
@@ -778,7 +785,13 @@ p {
 
 .menu p {
   margin: 5px;
-  font-size: 15px;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 400px) {
+  .menu p {
+    font-size: 15px;
+  }
 }
 
 .menu .icon_heart {
