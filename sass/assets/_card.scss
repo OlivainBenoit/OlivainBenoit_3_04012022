@@ -93,6 +93,23 @@
     font-size: 20px;
   }
   &_card {
+    &:hover {
+      & .menu_card_price_check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 15px 15px 0;
+        font-size: 25px;
+        width: 50px;
+        background: $color-tertiary;
+        color: white;
+        animation: fadeside 2s;
+        cursor: pointer;
+      }
+      & i {
+        animation: rotate 2s;
+      }
+    }
     background-color: white;
     @include box-shadow;
     display: flex;
@@ -129,23 +146,6 @@
       }
       &_check {
         display: none;
-      }
-      &:hover {
-        & .menu_card_price_check {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 0 15px 15px 0;
-          font-size: 25px;
-          width: 50px;
-          background: $color-tertiary;
-          color: white;
-          animation: fadeside 2s;
-          cursor: pointer;
-        }
-        & i {
-          animation: rotate 2s;
-        }
       }
     }
   }

@@ -146,24 +146,6 @@
   }
 }
 
-@-webkit-keyframes loading-vanish {
-  from {
-    display: block;
-  }
-  to {
-    display: none;
-  }
-}
-
-@keyframes loading-vanish {
-  from {
-    display: block;
-  }
-  to {
-    display: none;
-  }
-}
-
 .menu h1 {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
 }
@@ -445,7 +427,7 @@ p {
   content: "";
   position: absolute;
   width: 100%;
-  height: 167%;
+  height: 100%;
   z-index: 10001;
   overflow: hidden;
   opacity: 0.6;
@@ -461,12 +443,12 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -25px 0 0 -25px;
+  margin: -25px 0 0 -50px;
   border: 5px solid #99e2d0;
   border-top: 5px solid #9356dc;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   background: transparent;
   -webkit-animation: custom-loading 2s linear;
           animation: custom-loading 2s linear;
@@ -479,6 +461,10 @@ p {
     width: 150px;
     height: 150px;
   }
+}
+
+body {
+  position: relative;
 }
 
 .btn {
@@ -709,6 +695,31 @@ p {
   padding-left: 10px;
 }
 
+.menu_card:hover .menu_card_price_check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0 15px 15px 0;
+  font-size: 25px;
+  width: 50px;
+  background: #99e2d0;
+  color: white;
+  -webkit-animation: fadeside 2s;
+          animation: fadeside 2s;
+  cursor: pointer;
+}
+
+.menu_card:hover i {
+  -webkit-animation: rotate 2s;
+          animation: rotate 2s;
+}
+
 .menu_card_name {
   width: 100%;
   overflow: hidden;
@@ -751,31 +762,6 @@ p {
 
 .menu_card_price_check {
   display: none;
-}
-
-.menu_card_price:hover .menu_card_price_check {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 0 15px 15px 0;
-  font-size: 25px;
-  width: 50px;
-  background: #99e2d0;
-  color: white;
-  -webkit-animation: fadeside 2s;
-          animation: fadeside 2s;
-  cursor: pointer;
-}
-
-.menu_card_price:hover i {
-  -webkit-animation: rotate 2s;
-          animation: rotate 2s;
 }
 
 .menu h5 {
