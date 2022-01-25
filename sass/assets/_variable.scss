@@ -84,12 +84,3 @@ $color-darkgray: #353535;
     background: transparent;
   }
 }
-
-@keyframes loading-vanish {
-  from {
-    display: block;
-  }
-  to {
-    display: none;
-  }
-}
